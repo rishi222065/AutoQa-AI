@@ -1,0 +1,24 @@
+{
+  "name": "autoqa-ai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "browser-worker"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:worker": "npm run dev --workspace=browser-worker",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "lint": "npm run lint --workspace=frontend",
+    "test:browser": "npm run test:browser --workspace=browser-worker",
+    "test:queue": "npm run test:queue --workspace=browser-worker"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

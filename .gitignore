@@ -1,0 +1,36 @@
+﻿# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Playwright output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+**/screenshots/
+**/traces/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

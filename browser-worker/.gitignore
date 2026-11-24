@@ -1,0 +1,26 @@
+﻿# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Playwright reports and test output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Browser evidence generated during local testing
+screenshots/
+traces/
